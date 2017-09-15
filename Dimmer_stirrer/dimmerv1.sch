@@ -1,0 +1,186 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:dimmerv1-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GND #PWR01
+U 1 1 57C5EA0F
+P 5800 4200
+F 0 "#PWR01" H 5800 3950 50  0001 C CNN
+F 1 "GND" H 5800 4050 50  0000 C CNN
+F 2 "" H 5800 4200 50  0000 C CNN
+F 3 "" H 5800 4200 50  0000 C CNN
+	1    5800 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_TRIAC_AAG D2
+U 1 1 59A0366F
+P 6550 3500
+F 0 "D2" H 6675 3525 50  0000 L CNN
+F 1 "Q_TRIAC_AAG" H 6675 3450 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Vertical" V 6625 3525 50  0001 C CNN
+F 3 "" V 6550 3500 50  0001 C CNN
+	1    6550 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIAC_ALT D1
+U 1 1 59A03A2A
+P 6100 3600
+F 0 "D1" H 6100 3750 50  0000 C CNN
+F 1 "DIAC_ALT" H 6100 3450 50  0000 C CNN
+F 2 "Diodes_ThroughHole:D_DO-35_SOD27_P7.62mm_Horizontal" H 6100 3600 50  0001 C CNN
+F 3 "" H 6100 3600 50  0001 C CNN
+	1    6100 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 3600 6400 3600
+Wire Wire Line
+	5800 3600 5800 3800
+Wire Wire Line
+	5800 3600 5950 3600
+$Comp
+L R R2
+U 1 1 59A03AED
+P 5800 3450
+F 0 "R2" V 5880 3450 50  0000 C CNN
+F 1 "250k" V 5800 3450 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5730 3450 50  0001 C CNN
+F 3 "" H 5800 3450 50  0001 C CNN
+	1    5800 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3200 5800 3300
+Wire Wire Line
+	5800 4100 5800 4200
+Wire Wire Line
+	5800 2900 5800 2800
+Wire Wire Line
+	6550 3650 6550 4150
+Connection ~ 5800 4150
+$Comp
+L CONN_01X01_MALE J2
+U 1 1 59A03CD9
+P 6300 2500
+F 0 "J2" H 6300 2575 50  0000 C CNN
+F 1 "CONN_01X01_MALE" H 6300 2400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 6300 2500 50  0001 C CNN
+F 3 "" H 6300 2500 50  0001 C CNN
+	1    6300 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6550 2800 6550 3350
+$Comp
+L CONN_01X01_MALE J1
+U 1 1 59A03C70
+P 6050 2500
+F 0 "J1" H 6050 2575 50  0000 C CNN
+F 1 "CONN_01X01_MALE" H 6050 2400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 6050 2500 50  0001 C CNN
+F 3 "" H 6050 2500 50  0001 C CNN
+	1    6050 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X01_MALE J3
+U 1 1 59A03E62
+P 6850 3200
+F 0 "J3" H 6850 3275 50  0000 C CNN
+F 1 "CONN_01X01_MALE" H 6850 3100 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 6850 3200 50  0001 C CNN
+F 3 "" H 6850 3200 50  0001 C CNN
+	1    6850 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01_MALE J4
+U 1 1 59A03EC3
+P 6850 4150
+F 0 "J4" H 6850 4225 50  0000 C CNN
+F 1 "CONN_01X01_MALE" H 6850 4050 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 6850 4150 50  0001 C CNN
+F 3 "" H 6850 4150 50  0001 C CNN
+	1    6850 4150
+	-1   0    0    1   
+$EndComp
+Connection ~ 6550 4150
+Wire Wire Line
+	6550 4150 5800 4150
+Wire Wire Line
+	5800 2800 6050 2800
+Wire Wire Line
+	6300 2800 6550 2800
+Connection ~ 6550 3200
+$Comp
+L POT RV1
+U 1 1 59A059CC
+P 5800 3050
+F 0 "RV1" V 5625 3050 50  0000 C CNN
+F 1 "200k" V 5700 3050 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Alps_RK163_Single_Vertical" H 5800 3050 50  0001 C CNN
+F 3 "" H 5800 3050 50  0001 C CNN
+	1    5800 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 3050 5950 3250
+Wire Wire Line
+	5950 3250 5800 3250
+Connection ~ 5800 3250
+$Comp
+L C C1
+U 1 1 59A0706F
+P 5800 3950
+F 0 "C1" H 5825 4050 50  0000 L CNN
+F 1 "0.1uF/630V" H 5825 3850 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Rect_L18.0mm_W5.0mm_P15.00mm_FKS3_FKP3" H 5838 3800 50  0001 C CNN
+F 3 "" H 5800 3950 50  0001 C CNN
+	1    5800 3950
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
